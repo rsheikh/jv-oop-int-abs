@@ -22,7 +22,8 @@ import java.util.List;
                 List<Environment<?>> environments = List.of(sky, water, road);
 
                 for (Environment<?> environment: environments) {
-                    environment.checkTraffic();
+                    // environment.checkTraffic();
+                    environment.checkVehicles();
                 }
 
             }

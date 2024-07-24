@@ -9,4 +9,13 @@ public abstract class Environment<T> {
     public void addTraffic(T traffic) {
         this.traffic.add(traffic);
     }
+
+
+    public void checkVehicles() {
+        for (T item: traffic) {
+            if (item instanceof Vehicle) {
+                System.out.println(item.getClass().getSimpleName() + " is being driven!");
+            }
+        }
+    }
 }
