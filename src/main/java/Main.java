@@ -10,7 +10,15 @@ import java.util.List;
                 sky.addTraffic(new Pigeon());
                 sky.addTraffic(new Aeroplane());
 
-                sky.checkTraffic();
+                Water water = new Water();
+                water.addTraffic(new Duck());
+                water.addTraffic(new Fish());
+
+                List<Environment<?>> environments = List.of(sky, water);
+
+                for (Environment<?> environment: environments) {
+                    environment.checkTraffic();
+                }
 
             }
 
