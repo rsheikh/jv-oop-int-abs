@@ -1,32 +1,17 @@
 import java.util.List;
 
-public class Main {
 
-    public static void main(String[] args) {
+        class Main {
 
-        List<Object> objects = List.of(
-                new Aeroplane(),
-                new Car(),
-                new Pigeon(),
-                new Duck(),
-                new Fish()
-        );
+            public static void main(String[] args) {
 
-        for (Object object : objects) {
+                Sky sky = new Sky();
+                sky.addTraffic(new Duck());
+                sky.addTraffic(new Pigeon());
+                sky.addTraffic(new Aeroplane());
 
-            if (object instanceof Swimmable swimmable) {
-                swimmable.swim();
-            }
+                sky.checkTraffic();
 
-            if (object instanceof Flyable flyable) {
-                flyable.fly();
-            }
-
-            if (object instanceof Vehicle vehicle) {
-                vehicle.move();
             }
 
         }
-
-    }
-}

@@ -8,6 +8,6 @@ public class Aeroplane extends Vehicle implements Flyable {
 
     @Override
     public void fly() {
-        System.out.println("The plane is about to take off!");
+     //   System.out.println(this.getClass().getSimpleName() + " is flying!");
     }
 }
