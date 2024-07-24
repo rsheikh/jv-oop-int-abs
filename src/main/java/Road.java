@@ -1,2 +1,6 @@
-public class Road extends Environment {
+public class Road extends Environment<Flyable> {
+    @Override
+    public void checkTraffic() {
+
+    }
 }
